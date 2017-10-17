@@ -6,7 +6,7 @@ Hexwar is a territorial game based on a freeware game I don't remember the name 
 
 The game features a basic AI that optimizes the number of gains for the next turn only.
 
-##to do
+## to do
 * Possibility to select starting positions
 * Possibility to change number of colors
 * Create menu and more sophisticated GUI elements
