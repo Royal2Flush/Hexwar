@@ -47,30 +47,44 @@ int CGame::Init( int screenWidth, int ScreenHeight )
 	m_playerStart[4] = m_hexNum / 2 - m_fieldSize + 1;
 	m_playerStart[5] = m_hexNum / 2 + m_fieldSize - 1;
 
-	m_playerPlay[0] = true;
-	m_playerPlay[1] = true;
-	m_playerPlay[2] = true;
-	m_playerPlay[3] = true;
-	m_playerPlay[4] = true;
-	m_playerPlay[5] = true;
-	m_numPlayers = 6;
-
 	for (int i = 0; i < 6; i++)
 	{
-		m_playerAI[i] = true;
+		m_playerPlay[i] = false;
+		m_playerAI[i] = false;
 		m_points[i] = 0;
 		m_times[i] = 0.;
 		m_names[i] = "P ";
 		m_names[i].append(toString(i));
+	}
+	m_numPlayers = 0;
+	
+	// Temporary solution for player number
+	int numActive, numHumans;
+	cout << "Number of overall players: ";
+	cin >> numActive;
+	cout << "Number of human players: ";
+	cin >> numHumans;
+
+	for (int i = 0; i < numActive; i++)
+	{
+		m_playerPlay[i] = true;
+		m_numPlayers++;
+		m_points[i] = 1;
+		m_UIPoints[i].Init(FONTFILE, 32, "   1", m_colors[i], 255);
+	}
+	for (int i = numHumans; i < m_numPlayers; i++)
+	{
+		m_playerAI[i] = true;
+	}
+	/*for (int i = 0; i < m_numPlayers; i++)
+	{
 		if (m_playerPlay[i])
 		{
 			m_numPlayers++;
 			m_points[i] = 1;
 		}
-
 		m_UIPoints[i].Init(FONTFILE, 32, "0000", m_colors[i], 255);
-	}
-	m_playerAI[0] = false;
+	}*/
 
 	m_UIPoints[0].setPos(0, 0);
 	m_UIPoints[1].setPos(0, 30);
@@ -83,9 +97,6 @@ int CGame::Init( int screenWidth, int ScreenHeight )
 	{
 		m_activePlayer = rand() % 6;
 	} while (!m_playerPlay[m_activePlayer]);
-
-	//DEV-options
-	m_activePlayer = 0;
 
 	int refWidth = (m_sWidth - m_sHeight) * 0.25;
 	int refDist = (m_sWidth - m_sHeight) * 0.1;

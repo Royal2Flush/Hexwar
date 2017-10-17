@@ -1,17 +1,15 @@
-﻿Der Buildvorgang wurde am 31.08.2015 23:37:08 gestartet.
+﻿Der Buildvorgang wurde am 17.10.2017 23:50:29 gestartet.
      1>Projekt "C:\Users\Tobi\ownCloud\Cloud-Dokumente\VisualStudio\Hexwar\Hexwar\Hexwar.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ISDL2\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp main.cpp
-         main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ISDL2\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
          Game.cpp
-     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(15): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
-     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(16): warning C4244: '=': Konvertierung von 'double' in 'int', möglicher Datenverlust
-     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(111): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
-     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(112): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
-     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(153): warning C4244: 'Argument': Konvertierung von 'float' in 'Uint32', möglicher Datenverlust
-     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(373): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
-     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(374): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
-         Code wird generiert...
+     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(17): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
+     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(18): warning C4244: '=': Konvertierung von 'double' in 'int', möglicher Datenverlust
+     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(101): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
+     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(102): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
+     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(162): warning C4244: 'Argument': Konvertierung von 'float' in 'Uint32', möglicher Datenverlust
+     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(399): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
+     1>c:\users\tobi\owncloud\cloud-dokumente\visualstudio\hexwar\hexwar\game.cpp(400): warning C4244: 'Initialisierung': Konvertierung von 'double' in 'int', möglicher Datenverlust
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tobi\ownCloud\Cloud-Dokumente\VisualStudio\Hexwar\Debug\Hexwar.exe" /INCREMENTAL /NOLOGO /LIBPATH:SDL2\lib\x86 SDL2.lib SDL2main.lib SDL2_ttf.lib SDL2_gfx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tobi\ownCloud\Cloud-Dokumente\VisualStudio\Hexwar\Debug\Hexwar.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tobi\ownCloud\Cloud-Dokumente\VisualStudio\Hexwar\Debug\Hexwar.lib" /MACHINE:X86 Debug\AdditionalFunctions.obj
          Debug\Framework.obj
@@ -26,4 +24,4 @@
 
 Build erfolgreich.
 
-Verstrichene Zeit 00:00:02.97
+Verstrichene Zeit 00:00:01.53
